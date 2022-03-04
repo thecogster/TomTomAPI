@@ -31,3 +31,18 @@ def flatten_json(y):
 
     flatten(y)
     return out
+
+def dataprocessing(data):
+    rows = []
+    for i in data:
+        flatdata= flatten_json(i)
+        rows.append(flatdata)
+
+    netherlandsdf = pd.DataFrame(rows)
+    return netherlandsdf
+
+    
+
+if __name__ == '__main__':
+    data = datacollection()
+    dataprocessing(data)
