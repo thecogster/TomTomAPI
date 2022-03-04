@@ -1,4 +1,4 @@
-from turtle import pd
+# from turtle import pd
 
 
 import pandas as pd
@@ -41,7 +41,7 @@ def dataprocessing(data):
     netherlandsdf = pd.DataFrame(rows)
     return netherlandsdf
 
-    
+
 
 if __name__ == '__main__':
     data = datacollection()
